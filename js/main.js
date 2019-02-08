@@ -11,10 +11,11 @@ $.ajax({
 
             var departureInfo = `<div class="card" style="width: 24rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">${train.destination_name}</h5>
-                                        <h6 class="card-text">Platform: ${train.platform}</h6>
-                                        <h6 class="card-text">Scheduled arrivial: ${train.aimed_arrival_time}</h6>
-                                        <p class="card-text">The ${train.operator_name} service is ${train.status}.</p>
+                                        <h4 class="card-title">${train.aimed_departure_time} to ${train.destination_name}</h4>
+                                        <h5 class="card-title">Platform: ${train.platform}</h5>
+                                        <h5 class="card-title">Arriving in ${train.best_arrival_estimate_mins} minutes</h5>                                        
+                                        <p class="card-text">This ${train.operator_name} service is ${train.status}.<br>
+                                        It is Expected to arrive at ${train.expected_arrival_time}</p>
                                     </div>
                                 </div>`;
             $('#departures').append(departureInfo).hide();
