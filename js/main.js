@@ -21,18 +21,3 @@ $.ajax({
             $('#departures').fadeIn(500);
         };
     });
-
-//Code to use later, search for specific station
-/* $.ajax({
-    dataType: "json",
-    url: stnUrl
-}).done(function (data) {
-    console.log(data);
-    $('#stations').html('<h3>Stations:</h3>');
-    for (var station of data.locations) {
-        var stationInfo = `<div class="searchResult card" style="width: 26rem;">
-                                <p>The ${station.name} <br> ${station.crs} <br> ${station.tiploc}</p> 
-                            </div>`;
-        $('#stations').append(stationInfo);
-    }
-}); */
