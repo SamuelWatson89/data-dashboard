@@ -8,25 +8,33 @@
     <title>Data Dashboard</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="css/dc.min.css">
+    <link rel="stylesheet" href="css/dc.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript" src="js/d3.min.js"></script>
     <script type="text/javascript" src="js/crossfilter.min.js"></script>
     <script type="text/javascript" src="js/dc.min.js"></script>
-    <script type="text/javascript" src="js/queue.min.js"></script> -->
+    <script type="text/javascript" src="js/queue.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>Rick & Morty!</h1>
-
-    <button onclick="writeToDocument('character')">Characters</button>
-    <button onclick="writeToDocument('episode')">Episodes</button>
-    <button onclick="writeToDocument('location')">Locations</button>
-
-    <div id="data"></div>
-
+        <div class="row">
+            <div class="col-12">
+                <h2>Departing</h2>
+            </div>
+            
+            <div class="col-12" id="departures">
+                Loading Data...
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
